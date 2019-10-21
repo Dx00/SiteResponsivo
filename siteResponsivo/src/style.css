@@ -1,0 +1,59 @@
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+
+body, ul, li, p {  
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+a { color: #ff0000; text-decoration: none; }
+
+.header { 
+    display: flex;
+    background-color: #1d1e20;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #1d1e20;
+    justify-content: space-between;}
+
+.menu { 
+    display: flex;
+}
+
+.menu li { 
+    margin-left: 10px;
+}
+
+
+/*Aumentar a área de clique para quando estiver acessando por mobile*/
+.menu li a { 
+    /*background-color: tomato; */
+    padding: 10px;
+    display: block;
+}
+
+.flex {
+	display: flex;
+	margin: 0 auto; 
+	max-width: 800px;
+	flex-wrap: wrap;
+}
+
+/*
+Flex 1 - se espande
+flex 1 1 - pode ficar menor, flex shrink
+flex 1 1 200px - significa que sempre terá a base de 
+200px se não conseguir ter 200px, irá quebrar;
+*/
+
+.flex > div { /*Falando direto com a div*/
+	flex: 1 1 200px;
+	margin: 10px;
+}
